@@ -8,7 +8,7 @@ SERIAL_PORT = 'COM1'
 BAUD_RATE = 9600  # Adjust this to match your printer's baud rate
 
 
-@app.route('/print', methods=['POST'])
+@app.route('/print', methods=['GET'])
 def print_text():
     # Send the command to open the cash drawer
     try:
